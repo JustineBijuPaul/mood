@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moody Computer</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Moody Computer</h1>
+        <div class="mood-container">
+            <p class="mood-label">Current mood:</p>
+            <span id="mood" class="mood">{{ mood }}</span>
+        </div>
+        <form id="user-input-form" class="form">
+            <label for="user_input" class="label">Ask me something:</label>
+            <div class="input-group">
+                <input type="text" id="user_input" name="user_input" required class="input">
+                <button type="submit" class="button">Submit</button>
+            </div>
+        </form>
+        <div class="response-container">
+            <p class="response-label">Response:</p>
+            <p id="response" class="response"></p>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#user-input-form').on('submit', function(event) {
+                event.preventDefault();
+                $.post('/get_response', $(this).serialize(), function(data) {
+                    $('#response').text(data.response);
+                    $('#mood').text(data.mood);
+                    animateMoodChange();
+                });
+            });
+
+            function animateMoodChange() {
+                $('#mood').css('animation', 'pulse 0.5s');
+                setTimeout(() => {
+                    $('#mood').css('animation', '');
+                }, 500);
+            }
+
+            setInterval(function() {
+                $.post('/change_mood', function(data) {
+                    $('#mood').text(data.mood);
+                    animateMoodChange();
+                });
+            }, 5000); // Change mood every 5 seconds
+        });
+    </script>
+</body>
+</html>
