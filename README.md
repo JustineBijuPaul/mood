@@ -82,13 +82,13 @@ Moody Computer is a web-based chatbot application that adds personality and unpr
 
 # Screenshots (Add at least 3)
 
-<img width="1280" alt="readme-banner" src="https://github.com/user-attachments/assets/35332e92-44cb-425b-9dff-27bcf1023c6c">
+<img width="1280" alt="readme-banner" src="https://github.com/JustineBijuPaul/mood/blob/main/ss/1.png">
 This is the startup page...
 
-<img width="1280" alt="readme-banner" src="https://github.com/user-attachments/assets/35332e92-44cb-425b-9dff-27bcf1023c6c">
+<img width="1280" alt="readme-banner" src="https://github.com/JustineBijuPaul/mood/blob/main/ss/2.png">
 it is the working of the softwere....
 
-<img width="1280" alt="readme-banner" src="https://github.com/user-attachments/assets/35332e92-44cb-425b-9dff-27bcf1023c6c">
+<img width="1280" alt="readme-banner" src="https://github.com/JustineBijuPaul/mood/blob/main/ss/3.png">
 it is the working of the softwere....
 
 # Diagrams
