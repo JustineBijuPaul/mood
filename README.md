@@ -1,6 +1,10 @@
-<img width="1280" alt="readme-banner" src="https://github.com/user-attachments/assets/35332e92-44cb-425b-9dff-27bcf1023c6c">
+[ss_1.webm](https://github.com/user-attachments/assets/9609f6e3-24df-4158-9648-27ddd980aad7)<img width="1280" alt="readme-banner" src="https://github.com/user-attachments/assets/35332e92-44cb-425b-9dff-27bcf1023c6c">
 
 # MOODY COMPUTER 🎯
+
+### Project Demo
+# Video
+[ss_1.webm](https://github.com/user-attachments/assets/a1f5bf80-02c6-45a5-bfcb-85a891df32ec)
 
 ## Basic Details
 
@@ -176,10 +180,7 @@ it is the working of the softwere....
                    +------------------+
 
 ```
-### Project Demo
-# Video
-https://github.com/JustineBijuPaul/mood/tree/main/ss
----
+
 
 Mad`e with ❤️ at TinkerHub Useless Projects
 
